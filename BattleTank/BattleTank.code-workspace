@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"name": "BattleTank",
+			"path": "."
+		},
+		{
+			"name": "UE4",
+			"path": "/Users/Shared/EpicGames/UE_4.26"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"C_Cpp.default.forcedInclude": [
+			"${default}",
+			"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/Intermediate/Build/Mac/x86_64/UE4Editor/Development/BattleTank/Definitions.BattleTank.h",
+			"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/Intermediate/Build/Mac/x86_64/BattleTankEditor/Development/Engine/SharedPCH.Engine.ShadowErrors.h"
+		]
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp",
+			"vadimcn.vscode-lldb",
+			"ms-vscode.mono-debug"
+		]
+	}
+}

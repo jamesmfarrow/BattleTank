@@ -1,0 +1,27 @@
+[
+	{
+		"file": "/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/Source/BattleTank/BattleTank.Build.cs",
+		"command": "cl.exe @\"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/.vscode/compileCommands_Default/BattleTank.171.rsp\"",
+		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
+	},
+	{
+		"file": "/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/Source/BattleTank/BattleTank.cpp",
+		"command": "cl.exe @\"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/.vscode/compileCommands_Default/BattleTank.171.rsp\"",
+		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
+	},
+	{
+		"file": "/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/Source/BattleTank/BattleTank.h",
+		"command": "cl.exe @\"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/.vscode/compileCommands_Default/BattleTank.171.rsp\"",
+		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
+	},
+	{
+		"file": "/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/Source/BattleTank/BattleTankGameModeBase.cpp",
+		"command": "cl.exe @\"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/.vscode/compileCommands_Default/BattleTank.171.rsp\"",
+		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
+	},
+	{
+		"file": "/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/Source/BattleTank/BattleTankGameModeBase.h",
+		"command": "cl.exe @\"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/.vscode/compileCommands_Default/BattleTank.171.rsp\"",
+		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
+	}
+]

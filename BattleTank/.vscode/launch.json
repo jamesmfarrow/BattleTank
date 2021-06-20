@@ -5,7 +5,7 @@
 			"name": "BattleTank (Debug)",
 			"request": "launch",
 			"preLaunchTask": "BattleTank Mac Debug Build",
-			"program": "/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/Binaries/Mac/UE4-Mac-Debug.app/Contents/MacOS/UE4-Mac-Debug",
+			"program": "/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/Binaries/Mac/UE4-Mac-Debug.app/Contents/MacOS/UE4-Mac-Debug",
 			"args": [
 			],
 			"cwd": "/Users/Shared/EpicGames/UE_4.26",
@@ -15,7 +15,7 @@
 			"name": "BattleTank (DebugGame)",
 			"request": "launch",
 			"preLaunchTask": "BattleTank Mac DebugGame Build",
-			"program": "/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/Binaries/Mac/UE4-Mac-DebugGame.app/Contents/MacOS/UE4-Mac-DebugGame",
+			"program": "/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/Binaries/Mac/UE4-Mac-DebugGame.app/Contents/MacOS/UE4-Mac-DebugGame",
 			"args": [
 			],
 			"cwd": "/Users/Shared/EpicGames/UE_4.26",
@@ -25,7 +25,7 @@
 			"name": "BattleTank (Development)",
 			"request": "launch",
 			"preLaunchTask": "BattleTank Mac Development Build",
-			"program": "/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/Binaries/Mac/UE4.app/Contents/MacOS/UE4",
+			"program": "/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/Binaries/Mac/UE4.app/Contents/MacOS/UE4",
 			"args": [
 			],
 			"cwd": "/Users/Shared/EpicGames/UE_4.26",
@@ -35,7 +35,7 @@
 			"name": "BattleTank (Shipping)",
 			"request": "launch",
 			"preLaunchTask": "BattleTank Mac Shipping Build",
-			"program": "/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/Binaries/Mac/UE4-Mac-Shipping.app/Contents/MacOS/UE4-Mac-Shipping",
+			"program": "/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/Binaries/Mac/UE4-Mac-Shipping.app/Contents/MacOS/UE4-Mac-Shipping",
 			"args": [
 			],
 			"cwd": "/Users/Shared/EpicGames/UE_4.26",
@@ -45,7 +45,7 @@
 			"name": "BattleTank (Test)",
 			"request": "launch",
 			"preLaunchTask": "BattleTank Mac Test Build",
-			"program": "/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/Binaries/Mac/UE4-Mac-Test.app/Contents/MacOS/UE4-Mac-Test",
+			"program": "/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/Binaries/Mac/UE4-Mac-Test.app/Contents/MacOS/UE4-Mac-Test",
 			"args": [
 			],
 			"cwd": "/Users/Shared/EpicGames/UE_4.26",
@@ -57,7 +57,7 @@
 			"preLaunchTask": "BattleTankEditor Mac Debug Build",
 			"program": "/Users/Shared/EpicGames/UE_4.26/Engine/Binaries/Mac/UE4Editor-Mac-Debug.app/Contents/MacOS/UE4Editor-Mac-Debug",
 			"args": [
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject"
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject"
 			],
 			"cwd": "/Users/Shared/EpicGames/UE_4.26",
 			"type": "lldb"
@@ -68,7 +68,7 @@
 			"preLaunchTask": "BattleTankEditor Mac DebugGame Build",
 			"program": "/Users/Shared/EpicGames/UE_4.26/Engine/Binaries/Mac/UE4Editor-Mac-DebugGame.app/Contents/MacOS/UE4Editor-Mac-DebugGame",
 			"args": [
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject"
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject"
 			],
 			"cwd": "/Users/Shared/EpicGames/UE_4.26",
 			"type": "lldb"
@@ -79,7 +79,7 @@
 			"preLaunchTask": "BattleTankEditor Mac Development Build",
 			"program": "/Users/Shared/EpicGames/UE_4.26/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
 			"args": [
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject"
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject"
 			],
 			"cwd": "/Users/Shared/EpicGames/UE_4.26",
 			"type": "lldb"
@@ -93,7 +93,7 @@
 			"args": [
 				"-projectfiles",
 				"-vscode",
-				"-project=/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"-project=/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-game",
 				"-engine"
 			],

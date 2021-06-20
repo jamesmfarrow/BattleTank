@@ -9,7 +9,7 @@
 				"BattleTank",
 				"Mac",
 				"Debug",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -26,7 +26,7 @@
 				"BattleTank",
 				"Mac",
 				"Debug",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -46,7 +46,7 @@
 				"BattleTank",
 				"Mac",
 				"Debug",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -64,7 +64,7 @@
 				"BattleTank",
 				"Mac",
 				"DebugGame",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -81,7 +81,7 @@
 				"BattleTank",
 				"Mac",
 				"DebugGame",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -101,7 +101,7 @@
 				"BattleTank",
 				"Mac",
 				"DebugGame",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -119,7 +119,7 @@
 				"BattleTank",
 				"Mac",
 				"Development",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -136,7 +136,7 @@
 				"BattleTank",
 				"Mac",
 				"Development",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -156,7 +156,7 @@
 				"BattleTank",
 				"Mac",
 				"Development",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -174,7 +174,7 @@
 				"BattleTank",
 				"Mac",
 				"Shipping",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -191,7 +191,7 @@
 				"BattleTank",
 				"Mac",
 				"Shipping",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -211,7 +211,7 @@
 				"BattleTank",
 				"Mac",
 				"Shipping",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -229,7 +229,7 @@
 				"BattleTank",
 				"Mac",
 				"Test",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -246,7 +246,7 @@
 				"BattleTank",
 				"Mac",
 				"Test",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -266,7 +266,7 @@
 				"BattleTank",
 				"Mac",
 				"Test",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -284,7 +284,7 @@
 				"BattleTank",
 				"IOS",
 				"Debug",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -301,7 +301,7 @@
 				"BattleTank",
 				"IOS",
 				"Debug",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -321,7 +321,7 @@
 				"BattleTank",
 				"IOS",
 				"Debug",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -339,7 +339,7 @@
 				"BattleTank",
 				"IOS",
 				"DebugGame",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -356,7 +356,7 @@
 				"BattleTank",
 				"IOS",
 				"DebugGame",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -376,7 +376,7 @@
 				"BattleTank",
 				"IOS",
 				"DebugGame",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -394,7 +394,7 @@
 				"BattleTank",
 				"IOS",
 				"Development",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -411,7 +411,7 @@
 				"BattleTank",
 				"IOS",
 				"Development",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -431,7 +431,7 @@
 				"BattleTank",
 				"IOS",
 				"Development",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -449,7 +449,7 @@
 				"BattleTank",
 				"IOS",
 				"Shipping",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -466,7 +466,7 @@
 				"BattleTank",
 				"IOS",
 				"Shipping",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -486,7 +486,7 @@
 				"BattleTank",
 				"IOS",
 				"Shipping",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -504,7 +504,7 @@
 				"BattleTank",
 				"IOS",
 				"Test",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -521,7 +521,7 @@
 				"BattleTank",
 				"IOS",
 				"Test",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -541,7 +541,7 @@
 				"BattleTank",
 				"IOS",
 				"Test",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -559,7 +559,7 @@
 				"BattleTankEditor",
 				"Mac",
 				"Debug",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -576,7 +576,7 @@
 				"BattleTankEditor",
 				"Mac",
 				"Debug",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -596,7 +596,7 @@
 				"BattleTankEditor",
 				"Mac",
 				"Debug",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -614,7 +614,7 @@
 				"BattleTankEditor",
 				"Mac",
 				"DebugGame",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -631,7 +631,7 @@
 				"BattleTankEditor",
 				"Mac",
 				"DebugGame",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -651,7 +651,7 @@
 				"BattleTankEditor",
 				"Mac",
 				"DebugGame",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -669,7 +669,7 @@
 				"BattleTankEditor",
 				"Mac",
 				"Development",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -686,7 +686,7 @@
 				"BattleTankEditor",
 				"Mac",
 				"Development",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -706,7 +706,7 @@
 				"BattleTankEditor",
 				"Mac",
 				"Development",
-				"/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/BattleTank.uproject",
+				"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/BattleTank.uproject",
 				"-waitmutex",
 				"-clean"
 			],

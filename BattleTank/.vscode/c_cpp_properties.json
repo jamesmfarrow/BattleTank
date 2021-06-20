@@ -7,8 +7,7 @@
                 "/System/Library/Frameworks",
                 "/Library/Frameworks"
             ],
-            "compileCommands": "/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/.vscode/compileCommands_BattleTank.json",
-            "cStandard": "c17",
+            "compileCommands": "/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/.vscode/compileCommands_BattleTank.json",
             "cppStandard": "c++17"
         },
         {
@@ -18,8 +17,7 @@
                 "/System/Library/Frameworks",
                 "/Library/Frameworks"
             ],
-            "compileCommands": "/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/.vscode/compileCommands_Default.json",
-            "cStandard": "c17"
+            "compileCommands": "/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/.vscode/compileCommands_Default.json"
         }
     ],
     "version": 4

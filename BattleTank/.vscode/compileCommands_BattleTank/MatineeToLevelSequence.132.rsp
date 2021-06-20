@@ -1,5 +1,5 @@
 -include "/Users/Shared/EpicGames/UE_4.26/Engine/Plugins/MovieScene/MatineeToLevelSequence/Intermediate/Build/Mac/x86_64/UE4Editor/Development/MatineeToLevelSequence/Definitions.MatineeToLevelSequence.h"
--include "/Users/james/Downloads/UnrealProjects/BattleTank/BattleTank/Intermediate/Build/Mac/x86_64/BattleTankEditor/Development/UnrealEd/SharedPCH.UnrealEd.ShadowErrors.h"
+-include "/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/Intermediate/Build/Mac/x86_64/BattleTankEditor/Development/UnrealEd/SharedPCH.UnrealEd.ShadowErrors.h"
 -I"/Users/Shared/EpicGames/UE_4.26/Engine/Source"
 -I"/Users/Shared/EpicGames/UE_4.26/Engine/Plugins/MovieScene/MatineeToLevelSequence/Source/MatineeToLevelSequence/Private"
 -I"/Users/Shared/EpicGames/UE_4.26/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/LevelSequence"

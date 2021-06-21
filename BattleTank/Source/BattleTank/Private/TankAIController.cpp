@@ -4,6 +4,35 @@
 #include "Kismet/GameplayStatics.h"
 #include "TankAIController.h"
 
+void ATankAIController::BeginPlay() 
+{
+	Super::BeginPlay();
+	
+    ATank* PlayerTank{GetPlayerTank()};
+    if(PlayerTank)
+    {
+        UE_LOG(LogTemp, Warning, TEXT("Found FirstPlayerController: %s"), *(PlayerTank->GetName()));
+        PlayerTank->AimAt(PlayerTank->GetActorLocation());
+    }
+    else
+    {
+        UE_LOG(LogTemp, Warning, TEXT("Unable to FirstPlayerController from AItank"));
+    }
+
+}
+
+// Called every frame
+void ATankAIController::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+    //UE_LOG(LogTemp, Warning, TEXT("AIController is ticking"));
+    
+    if(GetPlayerTank())
+    {
+        GetControlledTank()->AimAt(GetPlayerTank()->GetActorLocation());
+    }
+
+}
 
 ATank* ATankAIController::GetControlledTank() const
 {
@@ -18,19 +47,3 @@ ATank* ATankAIController::GetPlayerTank() const
 }
 
 
-
-void ATankAIController::BeginPlay() 
-{
-	Super::BeginPlay();
-	
-    ATank* PlayerTank{GetPlayerTank()};
-    if(PlayerTank)
-    {
-        UE_LOG(LogTemp, Warning, TEXT("Found FirstPlayerController: %s"), *(PlayerTank->GetName()));
-    }
-    else
-    {
-        UE_LOG(LogTemp, Warning, TEXT("Unable to FirstPlayerController from AItank"));
-    }
-
-}

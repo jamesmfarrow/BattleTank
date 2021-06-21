@@ -19,7 +19,7 @@ private:
 
 	// variable projectile luanch speed
 	UPROPERTY(EditAnywhere, Category = Firing)
-	float LaunchSpeed{100000.f}; //sensible starting value
+	float LaunchSpeed{100000.f}; //TODO find sensible starting velocity
 
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

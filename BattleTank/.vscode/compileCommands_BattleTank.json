@@ -35,6 +35,11 @@
 		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
 	},
 	{
+		"file": "/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/Source/BattleTank/Private/TankAimingComponent.cpp",
+		"command": "cl.exe @\"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/.vscode/compileCommands_BattleTank/BattleTank.171.rsp\"",
+		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
+	},
+	{
 		"file": "/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/Source/BattleTank/Private/TankPlayerController.cpp",
 		"command": "cl.exe @\"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/.vscode/compileCommands_BattleTank/BattleTank.171.rsp\"",
 		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
@@ -46,6 +51,11 @@
 	},
 	{
 		"file": "/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/Source/BattleTank/Public/TankAIController.h",
+		"command": "cl.exe @\"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/.vscode/compileCommands_BattleTank/BattleTank.171.rsp\"",
+		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
+	},
+	{
+		"file": "/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/Source/BattleTank/Public/TankAimingComponent.h",
 		"command": "cl.exe @\"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/.vscode/compileCommands_BattleTank/BattleTank.171.rsp\"",
 		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
 	},

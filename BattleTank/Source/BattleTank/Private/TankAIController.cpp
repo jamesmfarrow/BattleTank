@@ -9,7 +9,7 @@ void ATankAIController::BeginPlay()
 	Super::BeginPlay();
 	
     ATank* PlayerTank{GetPlayerTank()};
-    if(PlayerTank)
+    /*if(PlayerTank)
     {
         UE_LOG(LogTemp, Warning, TEXT("Found FirstPlayerController: %s"), *(PlayerTank->GetName()));
         PlayerTank->AimAt(PlayerTank->GetActorLocation());
@@ -17,7 +17,7 @@ void ATankAIController::BeginPlay()
     else
     {
         UE_LOG(LogTemp, Warning, TEXT("Unable to FirstPlayerController from AItank"));
-    }
+    }*/
 
 }
 

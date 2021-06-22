@@ -9,6 +9,7 @@
 
 
 //forward declaration
+class UTankBarrel;
 
 UCLASS()
 class BATTLETANK_API ATank : public APawn

@@ -24,7 +24,7 @@ private:
 
 	// variable projectile luanch speed
 	UPROPERTY(EditAnywhere, Category = Firing)
-	float LaunchSpeed{100000.f}; //TODO find sensible starting velocity
+	float LaunchSpeed{4000.f}; //TODO find sensible starting velocity
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;

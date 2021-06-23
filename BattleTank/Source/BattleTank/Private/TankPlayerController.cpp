@@ -77,8 +77,10 @@ bool ATankPlayerController::GetLookVectorHitLocation(FVector Lookdirection, FVec
 			HitLocation = HitResult.Location;
 			return true;
 		}
-	
-	HitLocation = FVector(0);
+		else
+		{
+			HitLocation = FVector(0);
+		}
 	return false; //line trace failed
 }
 

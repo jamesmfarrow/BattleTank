@@ -3,6 +3,7 @@
 
 #include "Kismet/GameplayStatics.h"
 #include "TankBarrel.h"
+#include "TankTurret.h"
 #include "TankAimingComponent.h"
 
 // Sets default values for this component's properties
@@ -10,7 +11,7 @@ UTankAimingComponent::UTankAimingComponent()
 {
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
-	PrimaryComponentTick.bCanEverTick = true; // TO DO should this tick
+	PrimaryComponentTick.bCanEverTick = false;
 
 	// ...
 }
@@ -28,7 +29,7 @@ void UTankAimingComponent::SetTurretReference(UTankTurret* TurretToSet)
 void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed) 
 {
 	if(!Barrel) return;
-	if(Turret) UE_LOG(LogTemp, Warning, TEXT("We have a Turret!!!")); 
+	if(!Turret) { UE_LOG(LogTemp, Warning, TEXT("We have a Turret!!!")); return; }
 
 	FVector OutLaunchVelocity;
 	FVector StartLocation{Barrel->GetSocketLocation(FName("ProjectileLaunch"))};
@@ -58,5 +59,6 @@ void UTankAimingComponent::MoveBarrelTowards(FVector AimDirection)
 	auto AimAsRotation{AimDirection.Rotation()};
 	auto DeltaRotator{AimAsRotation - BarrelRotator};
 	
-	Barrel->Elevate(DeltaRotator.Pitch); 
+	Barrel->Elevate(DeltaRotator.Pitch);
+	Turret->Rotate(DeltaRotator.Yaw);
 }

@@ -20,28 +20,34 @@ void UTankAimingComponent::SetBarrelReference(UTankBarrel* BarrelToSet)
 	Barrel = BarrelToSet;
 }
 
+void UTankAimingComponent::SetTurretReference(UTankTurret* TurretToSet) 
+{
+	Turret = TurretToSet;
+}
+
 void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed) 
 {
 	if(!Barrel) return;
+	if(Turret) UE_LOG(LogTemp, Warning, TEXT("We have a Turret!!!")); 
 
 	FVector OutLaunchVelocity;
 	FVector StartLocation{Barrel->GetSocketLocation(FName("ProjectileLaunch"))};
 
 	//calculate the OutLanchVelocity
 	bool bHaveAimSolution{UGameplayStatics::SuggestProjectileVelocity(this, OutLaunchVelocity, StartLocation, HitLocation, LaunchSpeed, false, 0.f, 0.f,
-																		 ESuggestProjVelocityTraceOption::DoNotTrace, FCollisionResponseParams::DefaultResponseParam, TArray<AActor*>(), true)};
+																		 ESuggestProjVelocityTraceOption::DoNotTrace, FCollisionResponseParams::DefaultResponseParam, TArray<AActor*>(), false)};
 
 
 	if(bHaveAimSolution)
 	{
 		auto AimDirection{OutLaunchVelocity.GetSafeNormal()};
 		MoveBarrelTowards(AimDirection);
-		UE_LOG(LogTemp, Warning, TEXT("Aim Solution found")); 
+		//UE_LOG(LogTemp, Warning, TEXT("Aim Solution found")); 
 	}
 	else
 	{
 		//UE_LOG(LogTemp, Error, TEXT("No Aim Solution found"));
-		UE_LOG(LogTemp, Error, TEXT("No solution")); 
+		//UE_LOG(LogTemp, Error, TEXT("No solution")); 
 	}
 }
 
@@ -52,5 +58,5 @@ void UTankAimingComponent::MoveBarrelTowards(FVector AimDirection)
 	auto AimAsRotation{AimDirection.Rotation()};
 	auto DeltaRotator{AimAsRotation - BarrelRotator};
 	
-	Barrel->Elevate(5); //TODO remove magic number
+	Barrel->Elevate(DeltaRotator.Pitch); 
 }

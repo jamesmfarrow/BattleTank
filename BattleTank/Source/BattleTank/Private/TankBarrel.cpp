@@ -5,6 +5,7 @@
 
 void UTankBarrel::Elevate(float RelativeSpeed) 
 {
+
 	// move the barrel right amount this frame
 	// given max speed and frame time
 }

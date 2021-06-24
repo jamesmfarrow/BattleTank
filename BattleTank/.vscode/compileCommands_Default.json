@@ -25,6 +25,11 @@
 		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
 	},
 	{
+		"file": "/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/Source/BattleTank/Private/Projectile.cpp",
+		"command": "cl.exe @\"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/.vscode/compileCommands_Default/BattleTank.171.rsp\"",
+		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
+	},
+	{
 		"file": "/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/Source/BattleTank/Private/Tank.cpp",
 		"command": "cl.exe @\"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/.vscode/compileCommands_Default/BattleTank.171.rsp\"",
 		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
@@ -50,6 +55,16 @@
 		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
 	},
 	{
+		"file": "/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/Source/BattleTank/Private/TankTurret.cpp",
+		"command": "cl.exe @\"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/.vscode/compileCommands_Default/BattleTank.171.rsp\"",
+		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
+	},
+	{
+		"file": "/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/Source/BattleTank/Public/Projectile.h",
+		"command": "cl.exe @\"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/.vscode/compileCommands_Default/BattleTank.171.rsp\"",
+		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
+	},
+	{
 		"file": "/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/Source/BattleTank/Public/Tank.h",
 		"command": "cl.exe @\"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/.vscode/compileCommands_Default/BattleTank.171.rsp\"",
 		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
@@ -71,6 +86,11 @@
 	},
 	{
 		"file": "/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/Source/BattleTank/Public/TankPlayerController.h",
+		"command": "cl.exe @\"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/.vscode/compileCommands_Default/BattleTank.171.rsp\"",
+		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
+	},
+	{
+		"file": "/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/Source/BattleTank/Public/TankTurret.h",
 		"command": "cl.exe @\"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/.vscode/compileCommands_Default/BattleTank.171.rsp\"",
 		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
 	}

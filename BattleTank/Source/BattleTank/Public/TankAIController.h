@@ -22,6 +22,9 @@ private:
 
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	//AI pathfinding to this radius of actor
+	float AcceptanceRadius{3000.f}; // check if units are cm
 	
 };
 

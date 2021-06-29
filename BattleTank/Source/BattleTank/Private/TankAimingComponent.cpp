@@ -29,7 +29,7 @@ void UTankAimingComponent::SetTurretReference(UTankTurret* TurretToSet)
 void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed) 
 {
 	if(!Barrel) return;
-	if(!Turret) { UE_LOG(LogTemp, Warning, TEXT("We have a Turret!!!")); return; }
+	if(!Turret) return; 
 
 	FVector OutLaunchVelocity;
 	FVector StartLocation{Barrel->GetSocketLocation(FName("ProjectileLaunch"))};
@@ -43,7 +43,6 @@ void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed)
 	{
 		auto AimDirection{OutLaunchVelocity.GetSafeNormal()};
 		MoveBarrelTowards(AimDirection);
-		//UE_LOG(LogTemp, Warning, TEXT("Aim Solution"));
 	}
 }
 

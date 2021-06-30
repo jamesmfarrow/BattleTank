@@ -17,18 +17,20 @@ class BATTLETANK_API UTankMovementComponent : public UNavMovementComponent
 	GENERATED_BODY()
 
 public:
-	UFUNCTION(BlueprintCallable, Category = Input)
-	void IntendMoveForward(float Throw);
-
-	UFUNCTION(BlueprintCallable, Category = Input)
-	void IntendRotateClockwise(float Throw);
-
-	UFUNCTION(BlueprintCallable, Category = Setup)
+	UFUNCTION(BlueprintCallable, Category = "Setup")
 	void Initialise(UTankTrack* LeftTrackToSet, UTankTrack* RightTrackToSet);
 
-	virtual void RequestDirectMove(const FVector& MoveVelocity, bool bForceMaxSpeed) override;
+	UFUNCTION(BlueprintCallable, Category = "Input")
+	void IntendMoveForward(float Throw);
+
+	UFUNCTION(BlueprintCallable, Category = "Input")
+	void IntendRotateClockwise(float Throw);
+
 
 private:
+	//function below is for AI Movement off tanks, which in turn is passed into IntendMoveForward()
+	virtual void RequestDirectMove(const FVector& MoveVelocity, bool bForceMaxSpeed) override;
+
 	UTankTrack* LeftTrack{nullptr};
 	UTankTrack* RightTrack{nullptr};
 	

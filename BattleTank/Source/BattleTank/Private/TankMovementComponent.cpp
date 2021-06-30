@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "TankTrack.h"
 #include "TankMovementComponent.h"
+#include "TankTrack.h"
 
 void UTankMovementComponent::Initialise(UTankTrack* LeftTrackToSet, UTankTrack* RightTrackToSet) 
 {
@@ -12,11 +12,16 @@ void UTankMovementComponent::Initialise(UTankTrack* LeftTrackToSet, UTankTrack* 
 void UTankMovementComponent::RequestDirectMove(const FVector& MoveVelocity, bool bForceMaxSpeed) 
 {
     //No need to call Super as we are replacing functionality
-    auto TankForward{GetOwner()->GetActorForwardVector().GetSafeNormal()};
-    auto AIForwardIntention{MoveVelocity.GetSafeNormal()};
+    //vectors below are required for dot product - IntendMOveForward()
+    //and cross product IntendTurnRight()
+    auto TankForward{GetOwner()->GetActorForwardVector().GetSafeNormal()}; //worldspace vector
+    auto AIForwardIntention{MoveVelocity.GetSafeNormal()}; //worldspace vector
+
+
     auto ForwardThrow{FVector::DotProduct(TankForward, AIForwardIntention)};
-    IntendMoveForward(ForwardThrow);
-    //UE_LOG(LogTemp, Warning, TEXT("%s is moving at %s"), *Name, *AIForwardIntention)
+    auto RotationThrow(FVector::CrossProduct(TankForward, AIForwardIntention).Z);
+    //IntendMoveForward(ForwardThrow);
+    IntendRotateClockwise(RotationThrow);
 }
 
 void UTankMovementComponent::IntendMoveForward(float Throw) 
@@ -29,7 +34,8 @@ void UTankMovementComponent::IntendMoveForward(float Throw)
 void UTankMovementComponent::IntendRotateClockwise(float Throw) 
 {
     if(!LeftTrack || !RightTrack) return;
-    //UE_LOG(LogTemp, Warning, TEXT("Rotate Clockwise: %f"), Throw)
+    auto Name{GetOwner()->GetName()};
+    //UE_LOG(LogTemp, Warning, TEXT("%s is tyring to rotate : %f"),*Name, Throw)
     LeftTrack->SetThrottle(Throw);
     RightTrack->SetThrottle(-Throw);
 }

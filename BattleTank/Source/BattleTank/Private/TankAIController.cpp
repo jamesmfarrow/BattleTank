@@ -1,8 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+#include "TankAIController.h"
 #include "Tank.h"
 #include "Kismet/GameplayStatics.h"
-#include "TankAIController.h"
 
 void ATankAIController::BeginPlay() 
 {

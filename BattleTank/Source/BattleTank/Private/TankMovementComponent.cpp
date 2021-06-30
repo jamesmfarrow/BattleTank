@@ -19,8 +19,8 @@ void UTankMovementComponent::RequestDirectMove(const FVector& MoveVelocity, bool
 
 
     auto ForwardThrow{FVector::DotProduct(TankForward, AIForwardIntention)};
-    auto RotationThrow(FVector::CrossProduct(TankForward, AIForwardIntention).Z);
-    //IntendMoveForward(ForwardThrow);
+    auto RotationThrow(FVector::CrossProduct(AIForwardIntention,TankForward).Z); // check the vectors are correct way round - it matters in cross product
+    IntendMoveForward(ForwardThrow);
     IntendRotateClockwise(RotationThrow);
 }
 

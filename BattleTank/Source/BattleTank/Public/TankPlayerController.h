@@ -17,12 +17,16 @@ class BATTLETANK_API ATankPlayerController : public APlayerController
 {
 	GENERATED_BODY()
 
+protected:
+	UFUNCTION(BlueprintCallable, Category = "Setup")
+	ATank* GetControlledTank() const;
+
 
 private:
-	ATank* GetControlledTank() const;
 	
 	UPROPERTY(EditDefaultsOnly)
 	float CrossHairXLocation{0.5f};
+
 	UPROPERTY(EditDefaultsOnly)
 	float CrossHairYLocation{0.33333f};
 

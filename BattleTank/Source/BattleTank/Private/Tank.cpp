@@ -15,11 +15,11 @@ ATank::ATank()
 	PrimaryActorTick.bCanEverTick = false;
 
 	//no need to prtotect pointers as added at construction
-	TankAimingComponent = CreateDefaultSubobject<UTankAimingComponent>(FName("Aiming Component"));
+	//TankAimingComponent = CreateDefaultSubobject<UTankAimingComponent>(FName("Aiming Component"));
 	//TankMovementComponent = CreateDefaultSubobject<UTankMovementComponent>(FName("Movement Component"));
 }
 
-void ATank::SetBarrelReference(UTankBarrel* BarrelToSet) 
+/*void ATank::SetBarrelReference(UTankBarrel* BarrelToSet) 
 {
 	TankAimingComponent->SetBarrelReference(BarrelToSet);
 	LocalBarrel = BarrelToSet; //local barrel for spawning projectiles
@@ -28,7 +28,7 @@ void ATank::SetBarrelReference(UTankBarrel* BarrelToSet)
 void ATank::SetTurretReference(UTankTurret* TurretToSet) 
 {
 	TankAimingComponent->SetTurretReference(TurretToSet);
-}
+}*/
 
 // Called when the game starts or when spawned
 void ATank::BeginPlay()

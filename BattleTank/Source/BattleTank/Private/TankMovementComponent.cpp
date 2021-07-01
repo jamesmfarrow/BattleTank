@@ -26,16 +26,15 @@ void UTankMovementComponent::RequestDirectMove(const FVector& MoveVelocity, bool
 
 void UTankMovementComponent::IntendMoveForward(float Throw) 
 {
-    if(!LeftTrack || !RightTrack) return;
+    if(!ensure(LeftTrack && RightTrack)) return;
     LeftTrack->SetThrottle(Throw);
     RightTrack->SetThrottle(Throw);
 }
 
 void UTankMovementComponent::IntendRotateClockwise(float Throw) 
 {
-    if(!LeftTrack || !RightTrack) return;
+    if(!ensure(LeftTrack && RightTrack)) return;
     auto Name{GetOwner()->GetName()};
-    //UE_LOG(LogTemp, Warning, TEXT("%s is tyring to rotate : %f"),*Name, Throw)
     LeftTrack->SetThrottle(Throw);
     RightTrack->SetThrottle(-Throw);
 }

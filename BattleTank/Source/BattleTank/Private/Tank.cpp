@@ -13,12 +13,14 @@ ATank::ATank()
 {
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = false;
+
+	auto TankName{GetName()};
 }
 
 // Called when the game starts or when spawned
 void ATank::BeginPlay()
 {
-	Super::BeginPlay();
+	Super::BeginPlay(); // needed for Blueprint BeginPlay
 	
 }
 
@@ -31,19 +33,16 @@ void ATank::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 void ATank::AimAt(FVector HitLocation) 
 {
-	if(!TankAimingComponent)
-	{
-		UE_LOG(LogTemp, Error, TEXT("TankAimingComponent is missing"));
-		return;
-	} 
+	if(!ensure(TankAimingComponent)) return;
 	TankAimingComponent->AimAt(HitLocation, LaunchSpeed);
 }
 
 void ATank::FireProjectile() 
 {
+	if(!ensure(LocalBarrel)) return;
 	bool isReloaded{(FPlatformTime::Seconds() - LastFireTime) > ReloadTimeInSeconds};
 
-	if(LocalBarrel && isReloaded)
+	if(isReloaded)
 	{
 		auto Projectile{GetWorld()->SpawnActor<AProjectile>(ProjectileBlueprint, 
 														LocalBarrel->GetSocketLocation(FName("ProjectileLaunch")),

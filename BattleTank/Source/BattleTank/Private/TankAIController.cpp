@@ -1,9 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
-#include "Tank.h"
-//#include "Kismet/GameplayStatics.h"
 #include "TankAIController.h"
+#include "TankAimingComponent.h"
 
 
 void ATankAIController::BeginPlay() 
@@ -17,19 +15,21 @@ void ATankAIController::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
     
-    auto PlayerTank{Cast<ATank>(GetWorld()->GetFirstPlayerController()->GetPawn())};
-    auto ControlledTank{Cast<ATank>(GetPawn())};
+    auto PlayerTank{GetWorld()->GetFirstPlayerController()->GetPawn()};
+    auto ControlledTank{GetPawn()};
     
-    if(ensure(PlayerTank))
-    {
-        // move towards player
-        MoveToActor(PlayerTank, AcceptanceRadius); // TO DO check units of AcceptanceRadius
+    if(!ensure(PlayerTank && ControlledTank)) return;
+    // move towards player
+    MoveToActor(PlayerTank, AcceptanceRadius); // TO DO check units of AcceptanceRadius
 
-        // aim towards player
-        ControlledTank->AimAt(PlayerTank->GetActorLocation());
-        //fire if/when ready
-        ControlledTank->FireProjectile(); // TO DO limit firing rate
-    }
+     // aim towards player
+    auto AimingComponent{ControlledTank->FindComponentByClass<UTankAimingComponent>()};
+    if(!ensure(AimingComponent)) return;
+    AimingComponent->AimAt(PlayerTank->GetActorLocation());
+    //fire if/when ready
+
+    //TO DO fix firing
+    //AimingComponent->FireProjectile(); // TODO limit firing rate
 
 }
 

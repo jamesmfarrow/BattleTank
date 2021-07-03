@@ -8,6 +8,12 @@ UTankTrack::UTankTrack()
 	PrimaryComponentTick.bCanEverTick = true;
 }
 
+void UTankTrack::BeginPlay() 
+{
+	Super::BeginPlay();
+    OnComponentHit.AddDynamic(this, &UTankTrack::OnHit);
+}
+
 void UTankTrack::TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction *ThisTickFunction) 
 {
     // recipe for sideways forces/friction
@@ -19,6 +25,11 @@ void UTankTrack::TickComponent(float DeltaTime, enum ELevelTick TickType, FActor
     auto TankRoot{Cast<UStaticMeshComponent>(GetOwner()->GetRootComponent())};
     auto CorrectionForce{(TankRoot->GetMass() * CorrectionAcceleration) / 2}; // because there are 2 tracks
     TankRoot->AddForce(CorrectionForce);
+}
+
+void UTankTrack::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit) 
+{
+	UE_LOG(LogTemp, Warning, TEXT("I'm hit, I'm HIT!!"));
 }
 
 void UTankTrack::SetThrottle(float Throttle) 

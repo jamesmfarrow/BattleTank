@@ -15,6 +15,8 @@ enum class EFiringState : uint8
 	Reloading
 };
 
+
+
 //forward declaration
 class UTankBarrel;
 class UTankTurret;
@@ -36,6 +38,8 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Firing")
 	void FireProjectile();
 
+	EFiringState GetFiringState() const;
+
 
 protected:
 	UPROPERTY(BlueprintReadOnly, Category = "State")
@@ -52,7 +56,6 @@ private:
 	void MoveBarrelTowards(FVector AimDirection);
 
 	bool IsBarrelMoving();
-
 
 	UTankBarrel* Barrel{nullptr};
 	UTankTurret* Turret{nullptr};

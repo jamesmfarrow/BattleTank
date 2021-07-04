@@ -20,8 +20,10 @@ private:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+protected:
 	//AI pathfinding to this radius of actor
-	float AcceptanceRadius{3000.f}; // check if units are cm
+	UPROPERTY(EditDefaultsOnly, Category = "Setup")
+	float AcceptanceRadius{8000.f}; // check if units are cm
 	
 };
 

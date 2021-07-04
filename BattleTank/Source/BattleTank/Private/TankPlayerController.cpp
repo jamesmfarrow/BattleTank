@@ -27,7 +27,9 @@ void ATankPlayerController::AimAtCrossHairs()
 	if(!ensure(AimingComponent)) return;
 
 	FVector HitLocation; //out parameter
-	if(GetSightHitRayLocation(HitLocation))
+	bool bGotHitLocation{GetSightHitRayLocation(HitLocation)};
+	UE_LOG(LogTemp, Warning, TEXT("bGotHitLocation: %i"), bGotHitLocation);
+	if(bGotHitLocation)
 	{
 		AimingComponent->AimAt(HitLocation);
 	}

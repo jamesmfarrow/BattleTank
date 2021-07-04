@@ -15,25 +15,35 @@ class BATTLETANK_API UTankTrack : public UStaticMeshComponent
 	GENERATED_BODY()
 
 public:
-	//sets a throttle between +1 and -1
-	UFUNCTION(BlueprintCallable, Category = "Input")
-	void SetThrottle(float Throttle);
+	float CurrentThrottle{0.f};
 
 	//mac force per track in newtons Force = mass * acceleration, 50 tonne tank 1g accel
 	UPROPERTY(EditDefaultsOnly)
 	float MaxTrackDrivingForce{500000};
 
+	//sets a throttle between +1 and -1
+	UFUNCTION(BlueprintCallable, Category = "Input")
+	void SetThrottle(float Throttle);
+
+	
+	//UFUNCTION(BlueprintCallable, Category = "Input")
+	void DriveTrack();
+
 private:
 	//constructor
 	UTankTrack();
 
-	virtual void TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction *ThisTickFunction) override;
+	void ApplySidewaysForce();
 
 	virtual void BeginPlay() override;
 
 	UFUNCTION()
 	void OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit);
 };
+
+
+
+
 
 
 

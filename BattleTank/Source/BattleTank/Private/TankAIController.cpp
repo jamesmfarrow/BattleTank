@@ -19,7 +19,7 @@ void ATankAIController::Tick(float DeltaTime)
     auto PlayerTank{GetWorld()->GetFirstPlayerController()->GetPawn()};
     auto ControlledTank{GetPawn()};
     
-    if(!ensure(PlayerTank && ControlledTank)) return;
+    if(!(PlayerTank && ControlledTank)) return;
     // move towards player
     MoveToActor(PlayerTank, AcceptanceRadius); // TO DO check units of AcceptanceRadius
 

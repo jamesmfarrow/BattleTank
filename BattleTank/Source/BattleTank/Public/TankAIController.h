@@ -26,7 +26,7 @@ private:
 protected:
 	//AI pathfinding to this radius of actor
 	UPROPERTY(EditDefaultsOnly, Category = "Setup")
-	float AcceptanceRadius{80000.f}; // check if units are cm
+	float AcceptanceRadius{8000.f}; // check if units are cm
 
 	UFUNCTION()
 	void OnPssessedTankDeath();

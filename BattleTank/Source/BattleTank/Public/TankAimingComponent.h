@@ -67,7 +67,7 @@ private:
 
 	// variable projectile luanch speed
 	UPROPERTY(EditDefaultsOnly, Category = Firing) // TO DO remove one firing is moved to aiming component
-	float LaunchSpeed{6000.f};
+	float LaunchSpeed{4000.f};
 
 	UPROPERTY(EditDefaultsOnly, Category = Firing)
 	float ReloadTimeInSeconds{2.f};

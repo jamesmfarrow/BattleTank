@@ -1,6 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "TankAIController.h"
+#include "Tank.h" //so we can implement onDeath()
 #include "TankAimingComponent.h"
 
 
@@ -32,6 +33,23 @@ void ATankAIController::Tick(float DeltaTime)
     {
         AimingComponent->FireProjectile();
     }
+}
+
+void ATankAIController::SetPawn(APawn* InPawn) 
+{
+	Super::SetPawn(InPawn);
+    if(InPawn)
+    {
+        auto PossessedTank{Cast<ATank>(InPawn)};
+        if(!ensure(PossessedTank)) return;
+        //subsribe our local method to Tank death event
+        PossessedTank->OnDeath.AddUniqueDynamic(this, &ATankAIController::OnPssessedTankDeath);
+    }
+}
+
+void ATankAIController::OnPssessedTankDeath() 
+{
+	UE_LOG(LogTemp, Warning, TEXT("Received!! AI"));
 }
 
 

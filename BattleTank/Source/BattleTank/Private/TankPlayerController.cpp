@@ -2,6 +2,7 @@
 
 #include "TankPlayerController.h"
 #include "TankAimingComponent.h"
+#include "Tank.h" //so we can implement onDeath()
 
 void ATankPlayerController::BeginPlay() 
 {
@@ -19,6 +20,24 @@ void ATankPlayerController::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 	AimAtCrossHairs();
 }
+
+void ATankPlayerController::SetPawn(APawn* InPawn) 
+{
+	Super::SetPawn(InPawn);
+    if(InPawn)
+    {
+        auto PossessedTank{Cast<ATank>(InPawn)};
+        if(!ensure(PossessedTank)) return;
+        //subsribe our local method to Tank death event
+        PossessedTank->OnDeath.AddUniqueDynamic(this, &ATankPlayerController::OnPssessedTankDeath);
+    }
+}
+
+void ATankPlayerController::OnPssessedTankDeath() 
+{
+	UE_LOG(LogTemp, Warning, TEXT("Received!! Tank"));
+}
+
 
 void ATankPlayerController::AimAtCrossHairs() 
 {

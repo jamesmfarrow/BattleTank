@@ -26,6 +26,9 @@ protected:
 	UFUNCTION(BlueprintImplementableEvent, Category = "Setup")
 	void FoundAimingComponent(UTankAimingComponent* AimCompref);
 
+	UFUNCTION()
+	void OnPssessedTankDeath();
+
 private:
 	
 	UPROPERTY(EditDefaultsOnly)
@@ -48,11 +51,16 @@ private:
 
 	bool GetLookVectorHitLocation(FVector Lookdirection, FVector& HitLocation) const;
 
+	virtual void SetPawn(APawn* InPawn) override;
+
 public:
 	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaTime) override;
 
 };
+
+
+
 
 
 

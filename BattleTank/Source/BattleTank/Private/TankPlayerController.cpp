@@ -36,6 +36,7 @@ void ATankPlayerController::SetPawn(APawn* InPawn)
 void ATankPlayerController::OnPssessedTankDeath() 
 {
 	UE_LOG(LogTemp, Warning, TEXT("Received!! Tank"));
+	StartSpectatingOnly();
 }
 
 

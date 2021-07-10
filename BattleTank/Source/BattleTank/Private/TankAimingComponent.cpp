@@ -13,8 +13,14 @@ UTankAimingComponent::UTankAimingComponent()
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
-
 	// ...
+}
+
+void UTankAimingComponent::BeginPlay() 
+{
+	Super::BeginPlay();
+	//so that first fire is after initial reload
+	LastFireTime = FPlatformTime::Seconds(); //reset to platform time to enable next fire
 }
 
 void UTankAimingComponent::Initialise(UTankBarrel* BarrelToSet, UTankTurret* TurretToSet) 
@@ -22,6 +28,7 @@ void UTankAimingComponent::Initialise(UTankBarrel* BarrelToSet, UTankTurret* Tur
 	Barrel = BarrelToSet;
 	Turret = TurretToSet;
 };
+
 
 void UTankAimingComponent::TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction *ThisTickFunction) 
 {
@@ -60,11 +67,6 @@ bool UTankAimingComponent::IsBarrelMoving()
 	return !BarrelForward.Equals(AimDirection, 0.01); // FVectors are equal
 }
 
-void UTankAimingComponent::BeginPlay() 
-{
-	//so that first fire is after initial reload
-	LastFireTime = FPlatformTime::Seconds(); //reset to platform time to enable next fire
-}
 
 void UTankAimingComponent::AimAt(FVector HitLocation) 
 {

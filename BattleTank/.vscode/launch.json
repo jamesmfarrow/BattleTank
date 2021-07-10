@@ -2,17 +2,6 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-		"name": "Launch (lldb)",
-        "type": "cppdbg",
-        "request": "launch",
-        "program": "${workspaceFolder}/a.out",
-        "args": [],
-        "stopAtEntry": false,
-        "cwd": "${workspaceFolder}",
-        "environment": [],
-        "externalConsole": false
-		},
-		{
 			"name": "BattleTank (Debug)",
 			"request": "launch",
 			"preLaunchTask": "BattleTank Mac Debug Build",

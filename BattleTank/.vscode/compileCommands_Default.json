@@ -30,6 +30,11 @@
 		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
 	},
 	{
+		"file": "/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/Source/BattleTank/Private/SprungWheel.cpp",
+		"command": "cl.exe @\"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/.vscode/compileCommands_Default/BattleTank.171.rsp\"",
+		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
+	},
+	{
 		"file": "/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/Source/BattleTank/Private/Tank.cpp",
 		"command": "cl.exe @\"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/.vscode/compileCommands_Default/BattleTank.171.rsp\"",
 		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
@@ -46,6 +51,11 @@
 	},
 	{
 		"file": "/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/Source/BattleTank/Private/TankBarrel.cpp",
+		"command": "cl.exe @\"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/.vscode/compileCommands_Default/BattleTank.171.rsp\"",
+		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
+	},
+	{
+		"file": "/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/Source/BattleTank/Private/TankMovementComponent.cpp",
 		"command": "cl.exe @\"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/.vscode/compileCommands_Default/BattleTank.171.rsp\"",
 		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
 	},
@@ -70,6 +80,11 @@
 		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
 	},
 	{
+		"file": "/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/Source/BattleTank/Public/SprungWheel.h",
+		"command": "cl.exe @\"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/.vscode/compileCommands_Default/BattleTank.171.rsp\"",
+		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
+	},
+	{
 		"file": "/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/Source/BattleTank/Public/Tank.h",
 		"command": "cl.exe @\"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/.vscode/compileCommands_Default/BattleTank.171.rsp\"",
 		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
@@ -86,6 +101,11 @@
 	},
 	{
 		"file": "/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/Source/BattleTank/Public/TankBarrel.h",
+		"command": "cl.exe @\"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/.vscode/compileCommands_Default/BattleTank.171.rsp\"",
+		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
+	},
+	{
+		"file": "/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/Source/BattleTank/Public/TankMovementComponent.h",
 		"command": "cl.exe @\"/Users/james/Downloads/UnRealProjects/BattleTank/BattleTank/.vscode/compileCommands_Default/BattleTank.171.rsp\"",
 		"directory": "/Users/Shared/EpicGames/UE_4.26/Engine/Source"
 	},

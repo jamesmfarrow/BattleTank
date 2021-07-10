@@ -30,13 +30,13 @@ protected:
 private:
 	UProjectileMovementComponent* ProjectileMovement{nullptr};
 
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(VisibleAnywhere, Category = "Components")
 	UStaticMeshComponent* CollisionMesh{nullptr};
 
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(VisibleAnywhere, Category = "Components")
 	UParticleSystemComponent* LaunchBlast{nullptr};
 
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(VisibleAnywhere, Category = "Components")
 	UParticleSystemComponent* ImpactBlast{nullptr};
 
 	UPROPERTY(VisibleAnywhere, Category = "Components")
